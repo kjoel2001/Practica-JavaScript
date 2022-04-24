@@ -1,0 +1,17 @@
+function isEven ( num ) { return ( num %2 == 0) ; }
+function find ( arr,f ){
+    var j=0;
+  for(var i=0; i<5; i++){
+    var resultado=[4];
+    console.log(arr[i], "->",f(arr[i]));
+    if(isEven(arr[i]) == true){
+      resultado[j]=arr[i];
+      j++;
+    }
+  }
+return resultado;
+}
+isEven (3) // false
+isEven (4) // true
+result = find ([1, 3, 5, 4, 2] , isEven);
+console.log (" find result :", result ); // [4 , 2]

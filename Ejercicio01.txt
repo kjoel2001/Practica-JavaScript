@@ -1,0 +1,9 @@
+function square (x) { return (x*x); }//f
+function double (x) { return (x*2) ; }//g
+function composedValue ( square , double ,x){
+  //f(g(x))
+  ex1 = double(x)
+  ex2 = square(ex1)
+  return ex2
+}
+console.log( composedValue ( square , double , 3 ) ); // 36
